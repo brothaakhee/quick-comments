@@ -3,7 +3,11 @@
 A comment API using DRF that allows users to submit comments associated with a
 content URL and list comments per content.
 
-# Endpoint example usage:
+Run unit tests:
+
+`python manage.py test`
+
+# (Relevant) Endpoint example usage:
 
 `GET /content/`
 
