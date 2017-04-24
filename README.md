@@ -7,7 +7,7 @@ content URL and list comments per content.
 
 `GET /content/`
 
-See a list of content
+See list of all content
 
 `GET /content/<slug>/`
 
@@ -16,7 +16,7 @@ associated with it
 
 `GET /comments/`
 
-See all comments
+See list of all comments
 
 ```
 POST /comments/
@@ -32,7 +32,7 @@ already exist, it will be created automatically.
 
 # Throttling
 
-The API will by default throttle:
+The API will *by default* throttle:
 
 - Any user that makes more than 20 requests per minute.
 - Any user that tries to post more than 2 comments in a minute.
