@@ -19,8 +19,8 @@ from rest_framework import routers
 from comments import views
 
 router = routers.DefaultRouter()
-router.register(r'comments', views.CommentViewSet)
-router.register(r'content', views.ContentViewSet)
+router.register(r'comments', views.CommentViewSet, 'comments')
+router.register(r'content', views.ContentViewSet, 'content')
 
 urlpatterns = [
     url(r'^', include(router.urls)),
